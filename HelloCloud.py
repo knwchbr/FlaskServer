@@ -9,10 +9,10 @@ def index():
 @app.route('/home',methods=['GET','POST'])
 def home():
     links = ['https://ruk-com.in.th',
-            'https://www.google.com',
-            'https://www.python.org'
-            'https://www.kmutnb.ac.th']
-    return render_template('example.html',link=links)
+             'https://www.google.com',
+             'https://www.python.org'
+             'https://www.kmutnb.ac.th']
+    return render_template('example.html',links=links)
 
 if __name__ == '__main__':
     app.debug = True
